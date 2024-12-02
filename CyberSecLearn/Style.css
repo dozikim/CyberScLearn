@@ -1,0 +1,97 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #00ff00;
+    background: black;
+    background-image: radial-gradient(circle at center, #001f3f 0%, #001526 40%, #000000 100%), 
+                      url('https://www.transparenttextures.com/patterns/circuit-board.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(90deg, #003f00 0%, #00a000 100%);
+    color: #00ff00;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.1);
+}
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: flicker 1.5s infinite;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #002200;
+    padding: 10px 0;
+}
+nav a {
+    color: #00ff00;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #005500;
+}
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.resources, .commands {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background: #181a18;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 6px 15px rgba(0, 255, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    color: #00ff00;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(36, 226, 36, 0.3);
+}
+form input, form textarea, form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #26cc26;
+    font-size: 1rem;
+    background: #33f016;
+    color: #00ff00;
+}
+form button {
+    background: #074c07;
+    color: #353e35;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease-in-out;
+}
+form button:hover {
+    background: #005500;
+}
+footer {
+    background: #001f00;
+    color: #00ff00;
+    text-align: center;
+    padding: 20px 0;
+}
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>CyberSecurity Hub</h1>
+        <p>Your journey to becoming a cybersecurity expert starts here!!</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#commands">Linux Commands</a>
+        <a href="#tools">Tools</a>
+        <a href="#definitions">Definitions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>What is Cybersecurity?</h2>
+        <div class="definition">
+            <h3>Cybersecurity</h3>
+            <p>
+                Cybersecurity is the practice of protecting systems, networks, and data from cyber threats. It encompasses a wide variety of technologies, processes, and practices designed to safeguard devices, data, and networks from attack, damage, or unauthorized access.
+            </p>
+            <h4>Why is Cybersecurity Important?</h4>
+            <p>
+                With the increasing dependence on technology and the internet, protecting personal, business, and government data has become a critical concern. Cybersecurity helps prevent unauthorized access, data breaches, and ensures the integrity and availability of systems and data.
+            </p>
+        </div>
+        <section id="commands">
+            <h2>Essential Linux Commands</h2>
+            <div class="commands">
+                <!-- File Management -->
+                <div class="card">
+                    <h3>File Management</h3>
+                    <ul>
+                        <li><b>ls</b>: List all files and directories in the current directory.</li>
+                        <li><b>pwd</b>: Print the current working directory path.</li>
+                        <li><b>mkdir &lt;directory_name&gt;</b>: Create a new directory.</li>
+                        <li><b>rm &lt;file_name&gt;</b>: Remove a file.</li>
+                        <li><b>rmdir &lt;directory_name&gt;</b>: Remove an empty directory.</li>
+                        <li><b>cp &lt;source&gt; &lt;destination&gt;</b>: Copy a file or directory.</li>
+                        <li><b>mv &lt;source&gt; &lt;destination&gt;</b>: Move or rename a file or directory.</li>
+                        <li><b>cat &lt;file_name&gt;</b>: Display the contents of a file.</li>
+                        <li><b>touch &lt;file_name&gt;</b>: Create an empty file or update the timestamp.</li>
+                    </ul>
+                </div>
+        
+                <!-- Network Commands -->
+                <div class="card">
+                    <h3>Network Management</h3>
+                    <ul>
+                        <li><b>ifconfig</b>: Display network interfaces and their configurations.</li>
+                        <li><b>ping &lt;hostname&gt;</b>: Test connectivity to a network host.</li>
+                        <li><b>netstat -tulnp</b>: Show active network connections and listening ports.</li>
+                        <li><b>ss -t</b>: Display active TCP connections.</li>
+                        <li><b>wget &lt;url&gt;</b>: Download a file from a URL.</li>
+                        <li><b>scp &lt;source&gt; &lt;user&gt;@&lt;host&gt;:&lt;destination&gt;</b>: Securely copy files between systems.</li>
+                        <li><b>curl &lt;url&gt;</b>: Transfer data from a URL.</li>
+                    </ul>
+                </div>
+        
+                <!-- User Management -->
+                <div class="card">
+                    <h3>User Management</h3>
+                    <ul>
+                        <li><b>adduser &lt;username&gt;</b>: Add a new user to the system.</li>
+                        <li><b>passwd &lt;username&gt;</b>: Change the password for a user.</li>
+                        <li><b>su &lt;username&gt;</b>: Switch to another user account.</li>
+                        <li><b>who</b>: Show who is logged into the system.</li>
+                        <li><b>w</b>: Display active user sessions.</li>
+                        <li><b>id &lt;username&gt;</b>: Display user ID (UID) and group ID (GID).</li>
+                    </ul>
+                </div>
+        
+                <!-- Disk and System Info -->
+                <div class="card">
+                    <h3>Disk and System Information</h3>
+                    <ul>
+                        <li><b>df -h</b>: Display disk space usage in human-readable format.</li>
+                        <li><b>du -sh &lt;directory_name&gt;</b>: Show the size of a directory.</li>
+                        <li><b>free -h</b>: Display free and used memory in human-readable format.</li>
+                        <li><b>uptime</b>: Show system uptime and load averages.</li>
+                        <li><b>ps aux</b>: List all running processes.</li>
+                        <li><b>top</b>: Monitor processes and resource usage in real-time.</li>
+                        <li><b>uname -a</b>: Display detailed system information.</li>
+                    </ul>
+                </div>
+        
+                <!-- Permissions Management -->
+                <div class="card">
+                    <h3>Permissions Management</h3>
+                    <ul>
+                        <li><b>chmod &lt;permissions&gt; &lt;file_name&gt;</b>: Change the permissions of a file or directory.</li>
+                        <li><b>chown &lt;user&gt;:&lt;group&gt; &lt;file_name&gt;</b>: Change the owner of a file or directory.</li>
+                        <li><b>ls -l</b>: View detailed information about files, including permissions.</li>
+                        <li><b>chmod +x &lt;file_name&gt;</b>: Grant execute permission to a file.</li>
+                        <li><b>chmod -w &lt;file_name&gt;</b>: Remove write permission from a file.</li>
+                    </ul>
+                </div>
+        
+                <!-- Search and File Inspection -->
+                <div class="card">
+                    <h3>Search and File Inspection</h3>
+                    <ul>
+                        <li><b>find / -name &lt;file_name&gt;</b>: Search for a file starting from the root directory.</li>
+                        <li><b>grep "&lt;keyword&gt;" &lt;file_name&gt;</b>: Search for a keyword in a file.</li>
+                        <li><b>head &lt;file_name&gt;</b>: Display the first 10 lines of a file.</li>
+                        <li><b>tail &lt;file_name&gt;</b>: Display the last 10 lines of a file.</li>
+                        <li><b>tail -f &lt;file_name&gt;</b>: Follow a file in real-time as it updates.</li>
+                    </ul>
+                </div>
+        
+                <!-- Process Management -->
+                <div class="card">
+                    <h3>Process Management</h3>
+                    <ul>
+                        <li><b>ps aux</b>: Display a detailed list of all running processes.</li>
+                        <li><b>kill &lt;pid&gt;</b>: Terminate a process by its process ID.</li>
+                        <li><b>pkill &lt;process_name&gt;</b>: Kill a process by its name.</li>
+                        <li><b>systemctl restart &lt;service_name&gt;</b>: Restart a service.</li>
+                        <li><b>systemctl stop &lt;service_name&gt;</b>: Stop a running service.</li>
+                        <li><b>systemctl start &lt;service_name&gt;</b>: Start a service.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
+    <section id="tools">
+        <h2>Cybersecurity Tools</h2>
+        <div class="resources">
+            <!-- Tool 1 -->
+            <div class="card">
+                <h3>Metasploit</h3>
+                <p>A powerful open-source framework used for penetration testing and vulnerability research. It helps identify and exploit vulnerabilities in systems.</p>
+            </div>
+            <!-- Tool 2 -->
+            <div class="card">
+                <h3>Wireshark</h3>
+                <p>A network protocol analyzer that allows real-time packet capturing and analysis, aiding in network diagnostics and security assessments.</p>
+            </div>
+            <!-- Tool 3 -->
+            <div class="card">
+                <h3>Nmap</h3>
+                <p>Short for "Network Mapper," it is used for network discovery and security auditing by identifying open ports and services on systems.</p>
+            </div>
+            <!-- Tool 4 -->
+            <div class="card">
+                <h3>Burp Suite</h3>
+                <p>A web application security testing tool. It helps security professionals identify and exploit vulnerabilities in web applications.</p>
+            </div>
+            <!-- Tool 5 -->
+            <div class="card">
+                <h3>John the Ripper</h3>
+                <p>A password cracking tool that identifies weak passwords in systems and applications by performing brute force and dictionary attacks.</p>
+            </div>
+            <!-- Tool 6 -->
+            <div class="card">
+                <h3>Kali Linux</h3>
+                <p>A specialized Linux distribution that comes pre-installed with a wide range of security and penetration testing tools.</p>
+            </div>
+            <!-- Tool 7 -->
+            <div class="card">
+                <h3>OpenVAS</h3>
+                <p>An open-source vulnerability scanner that helps in identifying security issues in systems and networks.</p>
+            </div>
+            <!-- Tool 8 -->
+            <div class="card">
+                <h3>Hydra</h3>
+                <p>A fast and flexible password cracking tool used to test login credentials on various network protocols and services.</p>
+            </div>
+            <!-- Tool 9 -->
+            <div class="card">
+                <h3>Snort</h3>
+                <p>An open-source intrusion detection system (IDS) that monitors network traffic and detects potential malicious activity in real time.</p>
+            </div>
+            <!-- Tool 10 -->
+            <div class="card">
+                <h3>Nikto</h3>
+                <p>A web server scanner that checks for outdated software, vulnerabilities, and misconfigurations on web servers.</p>
+            </div>
+            <!-- Tool 11 -->
+            <div class="card">
+                <h3>SQLmap</h3>
+                <p>An automated tool for detecting and exploiting SQL injection vulnerabilities in database systems.</p>
+            </div>
+            <!-- Tool 12 -->
+            <div class="card">
+                <h3>Aircrack-ng</h3>
+                <p>A suite of tools for assessing Wi-Fi network security by capturing packets and testing WEP/WPA/WPA2 passwords.</p>
+            </div>
+            <!-- Tool 13 -->
+            <div class="card">
+                <h3>Hashcat</h3>
+                <p>A fast password recovery tool capable of cracking many hash types. It's widely used in password strength assessments.</p>
+            </div>
+            <!-- Tool 14 -->
+            <div class="card">
+                <h3>Maltego</h3>
+                <p>A data visualization tool for gathering and connecting information from open sources, used in digital forensics and threat analysis.</p>
+            </div>
+            <!-- Tool 15 -->
+            <div class="card">
+                <h3>OWASP ZAP</h3>
+                <p>An open-source web application security scanner designed for detecting vulnerabilities in web applications.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="definitions">
+        <h2>Cybersecurity Definitions</h2>
+        <div class="definition">
+            <h3>What is a Vulnerability?</h3>
+            <p>A vulnerability is a flaw or weakness in a system that can be exploited by attackers to gain unauthorized access or disrupt system operations.</p>
+        </div>
+        <div class="definition">
+            <h3>What is a Threat?</h3>
+            <p>A threat is any potential danger that could exploit a vulnerability, leading to damage or loss of data, systems, or operations.</p>
+        </div>
+        <div class="definition">
+            <h3>What is a Firewall?</h3>
+            <p>A firewall is a network security device or software designed to block unauthorized access while allowing legitimate communication based on predefined security rules.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need help, feel free to contact us.</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 CyberSec Hub | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
